@@ -1,0 +1,163 @@
+/*Start Global*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/*End Global*/
+/*start header*/
+header{
+    background-color: #00246d;
+    color: white;
+    padding: 10px;
+}
+
+header h1{
+ margin: 0 40px 0 40px;
+ float: left;
+}
+
+header ul{
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li{
+  display: inline-block;
+  margin:0 0 0 40px  ;
+}
+
+header ul li a{
+    margin-top: 5px;
+    display: inline-block;
+    color: white;
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  /*End header*/
+
+  /*start moveis*/
+  .container{
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+}
+ .container img{
+    width: calc(20% - 40px);
+    height: 200px;
+    margin: 20px ;
+   
+    
+}
+/*End moveis*/
+
+/*start footer*/
+footer{
+    background-color: #292929;
+    color: white;
+    font-style: italic;
+}
+footer > div:not(.clear-fix){
+ width: 50%;
+ 
+}
+footer h2{
+  text-shadow: 0 0 10px  white; 
+}
+/*End footer*/
+
+/*start media custom*/
+@media (max-width:700px){
+    header h1{
+        float: none;
+        text-align: center;
+    }
+ header ul{
+     display: none;
+ }
+
+
+}
+/*End media custom*/
+
+/*start media xs screen*/
+@media (max-width:767px){
+ 
+    .container img{
+        width: calc(50% - 40px);
+        height: 200px;
+        margin: 20px ;
+    }
+    
+    footer > div:not(.clear-fix){
+        float: none;
+        width: 100%;
+       }
+    .copyright  h2{
+           margin-top:0 ;
+       }
+    .design  h2{
+        margin-bottom:0 ;
+    }
+}
+/*End media xs screen*/
+
+/*start media sm screen*/
+@media (min-width:768px) and (max-width:991px){
+ 
+    .container img{
+        width: calc(33.33% - 40px);
+        height: 200px;
+        margin: 20px ;
+       
+        
+    }
+}
+/*end media sm screen*/
+
+/*start media md screen*/
+@media (min-width:992px) and (max-width:1199px){
+ 
+    .container img{
+        width: calc(25% - 40px);
+        height: 200px;
+        margin: 20px ;
+       
+        
+    }
+}
+/*end media md screen*/
+
+/*start media lg screen*/
+@media (min-width:1200px){
+ 
+    .container img{
+        width: calc(20% - 40px);
+        height: 200px;
+        margin: 20px ;
+       
+        
+    }
+}
+/*end media lg screen*/
+
+
+/*start my framework*/
+.clear-fix{
+    clear: both;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float:right;
+}
+.text-center{
+   text-align: center;
+}
+/*End my framework*/
